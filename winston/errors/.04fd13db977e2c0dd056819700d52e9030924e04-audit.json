@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\errors\\.04fd13db977e2c0dd056819700d52e9030924e04-audit.json",
+    "files": [
+        {
+            "date": 1758151294274,
+            "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\errors\\18-09-2025-05-error.log",
+            "hash": "4efb9788c789d06aba389a4ea2313edfffd29bcfe3d30b6c0b4191444135959e"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -11,7 +11,7 @@ app.use(cors({
     credentials: true,
 }));
 
-// App router here 
+// App router here
 
 app.get('/', (req: Request, res: Response) => {
     res.send({

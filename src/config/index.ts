@@ -11,6 +11,12 @@ export default {
      node_env: process.env.NODE_ENV,
      port: process.env.PORT,
 
+     resend: {
+          user: process.env.RESEND_USER,
+          api_key: process.env.RESEND_API_KEY,
+     },
+
+
      bcrypt_salt_rounds: process.env.BCRYPT_SALT_ROUNDS,
      socket_port: process.env.SOCKET_PORT,
      allowed_origins: process.env.ALLOWED_ORIGINS,

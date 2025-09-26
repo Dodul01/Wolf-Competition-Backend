@@ -1,6 +1,9 @@
 import express, { Application, Request, Response } from 'express';
 import cookiePerser from 'cookie-parser';
 import cors from 'cors';
+import router from './app/routes';
+import globalErrorHandler from './app/middleware/globalErrorHandler';
+import notFound from './app/middleware/notFound';
 
 const app: Application = express();
 
@@ -12,6 +15,7 @@ app.use(cors({
 }));
 
 // App router here
+app.use('/api/v1', router);
 
 app.get('/', (req: Request, res: Response) => {
     res.send({
@@ -21,5 +25,14 @@ app.get('/', (req: Request, res: Response) => {
         health: "OK"
     })
 });
+
+// serve static files from the "uploads" directory
+// TODO: 
+
+// global error handler
+app.use(globalErrorHandler);
+
+// not found handler
+app.use(notFound);
 
 export default app;

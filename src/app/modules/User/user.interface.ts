@@ -1,7 +1,6 @@
 import { Types } from "mongoose";
 import { UserGender, UserRole } from "./user.types";
 
-
 export interface IUser {
     userName?: string;
     email: string;
@@ -16,8 +15,9 @@ export interface IUser {
     role?: UserRole;
     isBlocked?: boolean;
     isDeleted?: boolean;
-    raffles: Types.ObjectId[];
+    raffles?: Types.ObjectId[];
     refferalCode?: string;
-    isPolicyAccepted?: boolean;
+    isPolicyAccepted: boolean;
     currency?: string[];
+    isVerified?: boolean;
 }

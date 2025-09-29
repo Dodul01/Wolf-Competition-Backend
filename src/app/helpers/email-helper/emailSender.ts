@@ -29,8 +29,12 @@ const sendEmail = async (emailDetails: IEmailFeilds, retries: number = 3, delay:
                 subject: subject,
                 html: html
             });
-            logger.info(colors.bgGreen(colors.black(`🚀 Email sent successfully..... Here is the details: ${info}`)));
-            emailSent = true;
+
+            if (info.messageId) {
+                logger.info(colors.bgGreen(colors.black(`🚀 Email sent successfully.....`)));
+                emailSent = true;
+            }
+
         } catch (error) {
             attempt++;
             errorLogger.error(error);

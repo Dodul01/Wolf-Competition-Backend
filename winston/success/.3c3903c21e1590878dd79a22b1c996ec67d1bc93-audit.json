@@ -6,11 +6,6 @@
     "auditLog": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\success\\.3c3903c21e1590878dd79a22b1c996ec67d1bc93-audit.json",
     "files": [
         {
-            "date": 1758152095980,
-            "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\success\\18-09-2025-05-success.log",
-            "hash": "4ead724a718a38721899fc041a56310f92101c4771ca2a88634775c7a67623d4"
-        },
-        {
             "date": 1758311701397,
             "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\success\\20-09-2025-01-success.log",
             "hash": "4e10c9e3cc03bafad9fd98f47736f43a1d0370f7d29fe319054cb03e499b7bc3"
@@ -99,6 +94,51 @@
             "date": 1759253099696,
             "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\success\\30-09-2025-23-success.log",
             "hash": "ade1a7bcab9152447a8fcd4fd654d211031adcd9d3de44fc612ff2a9dafa1f5d"
+        },
+        {
+            "date": 1759257611805,
+            "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\success\\01-10-2025-00-success.log",
+            "hash": "b3a9b20a19d0a767762aeb354a73b238880d1012c2a6d2961ba10baec8b4f4be"
+        },
+        {
+            "date": 1759259574095,
+            "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\success\\01-10-2025-01-success.log",
+            "hash": "0195cd905e8825c98ecbde46f3a73488423bd477b1de9775488ce7e4874802ed"
+        },
+        {
+            "date": 1759264946685,
+            "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\success\\01-10-2025-02-success.log",
+            "hash": "87ea66c5a2c5f80438a2ef935d200946ee72350f63e9d8e6c44931916c251f31"
+        },
+        {
+            "date": 1759266029494,
+            "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\success\\01-10-2025-03-success.log",
+            "hash": "3a128c51a8cc76dc7bd96a2aeaa337001a67f21969164b80cb31fb7fe469cdb7"
+        },
+        {
+            "date": 1759335614872,
+            "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\success\\01-10-2025-22-success.log",
+            "hash": "cf03e44407b4e2665e14e6cf4f86a27ee4e19695e34b0674f37317921f608469"
+        },
+        {
+            "date": 1759338153177,
+            "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\success\\01-10-2025-23-success.log",
+            "hash": "efae31e8d47b4e9f30d78c10db6ae94e187489fd2af15f3daeee79cd17d512e9"
+        },
+        {
+            "date": 1759341815346,
+            "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\success\\02-10-2025-00-success.log",
+            "hash": "64e60685380438a6f82445466bd6fb3365a5629bc726eca90226b4ef126dcbea"
+        },
+        {
+            "date": 1759358965033,
+            "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\success\\02-10-2025-04-success.log",
+            "hash": "766be5bb1ac929096e2df3b01ad441441de572748461eb5a8b62fe991f12d1ad"
+        },
+        {
+            "date": 1759420865513,
+            "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\success\\02-10-2025-22-success.log",
+            "hash": "73641010d8f62d24fb95d7f893bfcd41828d0aa176f92d374404daa86cd0c7a0"
         }
     ],
     "hashType": "sha256"

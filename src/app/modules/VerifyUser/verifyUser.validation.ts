@@ -5,4 +5,8 @@ const verifyUserValidation = z.object({
     otp: z.string({ message: "OTP is required" })
 });
 
-export const verifyUserValidationSchema = { verifyUserValidation };
+
+
+export const verifyUserValidationSchema = {
+    verifyUserValidation,
+};

@@ -34,4 +34,17 @@ const userValidationSchema = z.object({
     currency: z.array(z.string()).optional(),
 });
 
-export const userValidation = { userValidationSchema };
+const forgetPasswordValidation = z.object({
+    email: z.string({ message: "Email is required" }).email({ message: "Invalid email address" }),
+});
+
+const resetPasswordValidation = z.object({
+    newPassword: z.string({ message: "New password is required" }).min(8, { message: "Password must be at least 8 characters long" }).max(20, { message: "Password must be at most 20 characters long." }),
+    confirmPassword: z.string({ message: "Confirm password is required" }).min(8, { message: "Password must be at least 8 characters long" }).max(20, { message: "Password must be at most 20 characters long." }),
+});
+
+export const userValidation = {
+    userValidationSchema,
+    forgetPasswordValidation,
+    resetPasswordValidation
+};

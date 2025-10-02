@@ -20,4 +20,13 @@ export interface IUser {
     isPolicyAccepted: boolean;
     currency?: string[];
     isVerified?: boolean;
+};
+
+export interface IForgetPassword {
+    email: string;
+}
+
+export interface IResetPassword {
+    oldPassword: string,
+    newPassword: string
 }

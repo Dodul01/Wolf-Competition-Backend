@@ -5,25 +5,14 @@ import { IVerifyUser } from "./verifyUser.interface";
 import httpStatus from 'http-status';
 
 const verifyOTP = async (data: IVerifyUser) => {
-    /* TODO
-        1. check the email exsist or not
-        2. check the otp is correct or not
-        3. mark user as verified
-        4. remove otp
-    */
-   
     const { email, otp } = data;
-    let user;
 
     // check if the user exist
-    const isUserExist = await User.findOne({ email });
+    const user = await User.findOne({ email });
 
-    if (!isUserExist) {
+    if (!user) {
         throw new AppError(httpStatus.NOT_FOUND, "User not found.");
     }
-
-    // if exist then assign to user
-    user = isUserExist;
 
     const isOtpExist = await OTP.findOne({ otp });
 
@@ -31,15 +20,15 @@ const verifyOTP = async (data: IVerifyUser) => {
         throw new AppError(httpStatus.NOT_FOUND, "OTP not found.")
     }
 
-    if (isUserExist.email !== email) {
+    if (user.email !== email) {
         throw new AppError(httpStatus.UNAUTHORIZED, "Invalid email address.");
     }
 
-    user = await User.findOneAndUpdate({ email }, { isVerified: true }, { new: true })
+    const updatedUser = await User.findOneAndUpdate({ email }, { isVerified: true }, { new: true })
 
     await OTP.findOneAndDelete({ email });
 
-    return user;
+    return updatedUser;
 }
 
 export const VerifyUserService = {

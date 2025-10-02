@@ -59,10 +59,8 @@ const globalErrorHandler: ErrorRequestHandler = (err: any, req: Request, res: Re
             statusCode = 409;
             message = "Email already exsist.";
         }
-        console.log("inside normal error", err);
     }
 
-    //ultimate return
     return res.status(statusCode).json({
         statusCode,
         success: false,

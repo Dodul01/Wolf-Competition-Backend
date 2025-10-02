@@ -1,0 +1,2 @@
+Fri Oct 03 2025 3:13:22 [SERVER-NAME] error: [31mError starting server: ReferenceError: port is not defined[39m
+Fri Oct 03 2025 3:13:26 [SERVER-NAME] error: [31mError starting server: ReferenceError: config is not defined[39m

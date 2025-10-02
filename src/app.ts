@@ -4,6 +4,7 @@ import cors from 'cors';
 import router from './app/routes';
 import globalErrorHandler from './app/middleware/globalErrorHandler';
 import notFound from './app/middleware/notFound';
+import path from 'path';
 
 const app: Application = express();
 
@@ -27,7 +28,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 // serve static files from the "uploads" directory
-// TODO: 
+app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
 
 // global error handler
 app.use(globalErrorHandler);

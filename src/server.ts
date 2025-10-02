@@ -4,9 +4,9 @@ import { errorLogger, logger } from "./shared/logger";
 import colors from 'colors';
 import setupSecurity from "./config/security";
 import connectToDB from "./db/db";
+import config from "./config";
 
 let server: Server;
-const port = 5000;
 
 async function main() {
     try {
@@ -14,8 +14,8 @@ async function main() {
         connectToDB();
 
         // start server
-        server = app.listen(port, () => {
-            logger.info(colors.bgGreen(colors.black(`♻️  Application listening on http://localhost:${port}`)))
+        server = app.listen(config.port, () => {
+            logger.info(colors.bgGreen(colors.black(`♻️  Application listening on http://localhost:${config.port}`)))
         });
     } catch (err) {
         errorLogger.error(colors.red(`Error starting server: ${err}`));

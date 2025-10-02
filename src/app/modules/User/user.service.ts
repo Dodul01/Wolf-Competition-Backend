@@ -11,7 +11,7 @@ import AppError from "../../error/AppError";
 import http from 'http-status';
 import config from "../../../config";
 import { createToken } from "../Auth/auth.utils";
-import jwt from 'jsonwebtoken'
+import jwt from 'jsonwebtoken';
 
 //create user into db
 const createUserIntoDB = async (user: IUser) => {

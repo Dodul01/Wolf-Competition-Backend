@@ -38,6 +38,34 @@ const createRaffles = catchAsync(async (req: Request, res: Response) => {
     })
 });
 
+const updateRaffles = catchAsync(async (req: Request, res: Response) => {
+    const data = req.body;
+    const raffleId = req.params.rafflesId;
+
+    let raffleData = {};
+
+    if (req.file) {
+        const thumbnailURL = getRaffleThumbnailURL(req.file.filename);
+
+        raffleData = {
+            ...req.body,
+            thumbnail: thumbnailURL
+        }
+    }
+
+    raffleData = { ...data }
+
+    const result = await RafflesService.updateRaffles(raffleData, raffleId);
+
+    sendResponse(res, {
+        statusCode: httpStatus.OK,
+        success: true,
+        message: 'Raffle updated succesfully.',
+        data: result,
+    });
+});
+
 export const RafflesController = {
-    createRaffles
+    createRaffles,
+    updateRaffles
 };

@@ -1,5 +1,5 @@
 import express from 'express';
-import { upload, uploadRaffle } from '../../utils/uploadImage';
+import {  uploadRaffle } from '../../utils/uploadImage';
 import { RafflesController } from './raffles.controller';
 
 const router = express.Router();

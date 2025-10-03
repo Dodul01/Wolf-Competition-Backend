@@ -42,18 +42,14 @@ const updateRaffles = catchAsync(async (req: Request, res: Response) => {
     const data = req.body;
     const raffleId = req.params.rafflesId;
 
-    let raffleData = {};
+    let raffleData = { ...data };
 
     if (req.file) {
         const thumbnailURL = getRaffleThumbnailURL(req.file.filename);
-
-        raffleData = {
-            ...req.body,
-            thumbnail: thumbnailURL
-        }
+        raffleData.thumbnail = thumbnailURL;
     }
 
-    raffleData = { ...data }
+    // raffleData = { ...data }
 
     const result = await RafflesService.updateRaffles(raffleData, raffleId);
 
@@ -63,6 +59,15 @@ const updateRaffles = catchAsync(async (req: Request, res: Response) => {
         message: 'Raffle updated succesfully.',
         data: result,
     });
+});
+
+
+const getSingleRaffle = catchAsync(async (req: Request, res: Response) => {
+    // to be implemented later
+});
+
+const getAllRaffles = catchAsync(async (req: Request, res: Response) => {
+    // to be implemented later
 });
 
 export const RafflesController = {

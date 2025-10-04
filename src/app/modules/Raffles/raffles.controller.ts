@@ -63,17 +63,33 @@ const updateRaffles = catchAsync(async (req: Request, res: Response) => {
 
 
 const getSingleRaffle = catchAsync(async (req: Request, res: Response) => {
-    // to be implemented later
-    const id = req.params.id;
+    const id = req.params.rafflesId;
     const result = await RafflesService.getSingleRaffle(id)
+
+    sendResponse(res, {
+        statusCode: httpStatus.OK,
+        success: true,
+        message: "Raffle get succesfully.",
+        data: result
+    })
 
 });
 
 const getAllRaffles = catchAsync(async (req: Request, res: Response) => {
-    // to be implemented later
+    const result = await RafflesService.getAllRaffles();
+
+    sendResponse(res, {
+        statusCode: httpStatus.OK,
+        success: true,
+        message: "Raffles get succesfully.",
+        data: result
+    })
+
 });
 
 export const RafflesController = {
     createRaffles,
-    updateRaffles
+    updateRaffles,
+    getSingleRaffle,
+    getAllRaffles
 };

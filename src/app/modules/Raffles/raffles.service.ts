@@ -23,12 +23,14 @@ const updateRaffles = async (updatedRaffles: any, raffleId: string) => {
     return raffle;
 }
 
-const getSingleRaffle = (id: string) => {
-
+const getSingleRaffle = async (id: string) => {
+    const raffle = await Raffles.findById({ _id: id });
+    return raffle;
 }
 
-const getAllRaffles = () => {
-
+const getAllRaffles = async () => {
+    const raffle = await Raffles.find();
+    return raffle;
 }
 
 export const RafflesService = {

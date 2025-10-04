@@ -23,7 +23,17 @@ const updateRaffles = async (updatedRaffles: any, raffleId: string) => {
     return raffle;
 }
 
+const getSingleRaffle = (id: string) => {
+
+}
+
+const getAllRaffles = () => {
+
+}
+
 export const RafflesService = {
     createRaffles,
-    updateRaffles
+    updateRaffles,
+    getSingleRaffle,
+    getAllRaffles
 }

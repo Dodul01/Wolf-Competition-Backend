@@ -64,6 +64,9 @@ const updateRaffles = catchAsync(async (req: Request, res: Response) => {
 
 const getSingleRaffle = catchAsync(async (req: Request, res: Response) => {
     // to be implemented later
+    const id = req.params.id;
+    const result = await RafflesService.getSingleRaffle(id)
+
 });
 
 const getAllRaffles = catchAsync(async (req: Request, res: Response) => {

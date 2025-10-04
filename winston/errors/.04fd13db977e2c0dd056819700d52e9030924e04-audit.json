@@ -6,11 +6,6 @@
     "auditLog": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\errors\\.04fd13db977e2c0dd056819700d52e9030924e04-audit.json",
     "files": [
         {
-            "date": 1758311701401,
-            "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\errors\\20-09-2025-01-error.log",
-            "hash": "7afca828f6356a9136861f80edb104283d5b880934c05589660dd72290010415"
-        },
-        {
             "date": 1758390502545,
             "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\errors\\20-09-2025-23-error.log",
             "hash": "c9d80a4a67ac475536a7d1ba3710a1f34176eb1152c12cf9f0a393769e56414d"
@@ -174,6 +169,16 @@
             "date": 1759449601196,
             "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\errors\\03-10-2025-06-error.log",
             "hash": "e535cdf17a5bfa83ac912c143ddeed6874700c8c7eafa5ec25a01c2d8bd9a8b8"
+        },
+        {
+            "date": 1759535130490,
+            "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\errors\\04-10-2025-05-error.log",
+            "hash": "7a94cd5da67b3b5c7fb4743fac4ca92b9ccafc944b6495bfe0028819513633dc"
+        },
+        {
+            "date": 1759536610018,
+            "name": "C:\\Users\\allen\\OneDrive\\Desktop\\Dodul\\CompanyProject\\wolf-competition-backend\\winston\\errors\\04-10-2025-06-error.log",
+            "hash": "d3c44b28570cec7eb6b77ecdf66d2a3538d0ab829e712828d21f84abae31ace3"
         }
     ],
     "hashType": "sha256"
